@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sora: "'Sora', sans-serif",
+              poppins: "'Poppins', sans-serif",
+            },
+
+            colors: {
+              primary: "#22c55e",
+              secondary: "#fbbf24",
+              third: "#f1f5f9",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Tailwindcss -->
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/eccfaba240.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FontAwesome -->
+
+    <!-- Flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- Flowbite -->
+  </head>
+  <body>
+    <!-- navbar awal -->
+    <nav
+      class="py-2 lg:py-0 bg-slate-50 top-0 right-0 left-0 z-50 fixed border-b-2 border-primary"
+    >
+      <div class="container mx-auto px-6">
+        <div class="flex items-center justify-between">
+          <a href="#">
+            <img class="w-20 lg:w-28" src="img/logo.png" alt="" />
+          </a>
+
+          <ul
+            class="list-none items-center hidden gap-4 lg:gap-6 font-poppins lg:flex"
+          >
+            <li>
+              <a
+                href="#home"
+                class="font-semibold text-sm lg:text-base text-slate-600 hover:text-primary hover:underline no-underline underline-offset-8 transition duration-200 ease-in"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="font-semibold text-sm lg:text-base text-slate-600 hover:text-primary hover:underline no-underline underline-offset-8 transition duration-200 ease-in"
+                >Tentang Kami</a
+              >
+            </li>
+            <li>
+              <a
+                href="#produk"
+                class="font-semibold text-sm lg:text-base text-slate-600 hover:text-primary hover:underline no-underline underline-offset-8 transition duration-200 ease-in"
+                >Produk</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-semibold text-sm lg:text-base text-slate-600 hover:text-primary hover:underline no-underline underline-offset-8 transition duration-200 ease-in"
+                >Hubungi Kami</a
+              >
+            </li>
+          </ul>
+
+          <div
+            id="dropdown"
+            class="z-10 hidden bg-primary divide-y divide-gray-100 rounded-lg shadow w-60"
+          >
+            <ul
+              class="py-2 text-sm text-third font-poppins font-semibold"
+              aria-labelledby="dropdownDefaultButton"
+            >
+              <li>
+                <a
+                  href="#home"
+                  class="block px-4 py-2 hover:bg-secondary rounded-lg transition duration-200 ease-in"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="block px-4 py-2 hover:bg-secondary rounded-lg transition duration-200 ease-in"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#produk"
+                  class="block px-4 py-2 hover:bg-secondary rounded-lg transition duration-200 ease-in"
+                  >Produk</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-secondary rounded-lg transition duration-200 ease-in"
+                  >Hubungi Kami</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex items-center lg:hidden">
+            <button
+              class="w-9 h-9 border-2 border-primary rounded-lg hover:text-primary"
+              id="dropdownDefaultButton"
+              data-dropdown-toggle="dropdown"
+            >
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar akhir -->
+
+    <!-- hero awal -->
+    <section
+      id="home"
+      class="pt-44 pb-32 bg-[url('img/img_1.jpg')] bg-cover bg-center bg-no-repeat"
+    >
+      <div class="container mx-auto px-6">
+        <div class="block items-center justify-center">
+          <h1 class="font-poppins font-normal text-base lg:text-xl text-third">
+            Selamat datang di website
+            <span
+              class="block font-sora font-bold text-4xl lg:text-6xl text-primary max-w-[17rem] leading-normal lg:leading-[5rem] drop-shadow-sm"
+              >Viloneen Bakery</span
+            >
+          </h1>
+          <p
+            class="font-poppins font-normal text-sm lg:text-lg text-third tracking-normal leading-relaxed max-w-sm lg:max-w-md mb-10"
+          >
+            Jangan lewatkan kesempatan untuk menikmati kelezatan kue lokal
+            Indonesia dengan memesan di online bakery store kami sekarang juga!
+          </p>
+
+          <a
+            href="#"
+            class="py-4 px-8 bg-secondary text-white font-sora font-semibold text-base lg:text-xl rounded-full drop-shadow-md hover:bg-transparent hover:ring-2 hover:ring-secondary transition duration-200 ease-in"
+            >Pesan Sekarang
+            <span class="ml-2"><i class="fa-solid fa-cart-shopping"></i></span
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- hero akhir -->
+
+    <!-- about awal -->
+    <section id="about" class="pt-36 pb-32 bg-slate-200">
+      <div class="container mx-auto px-6">
+        <h1
+          class="font-sora font-bold text-secondary text-2xl lg:text-4xl text-center mb-5 drop-shadow-sm"
+        >
+          Tentang Kami
+        </h1>
+        <div class="flex flex-wrap lg:justify-center">
+          <div class="block items-center justify-center">
+            <h2
+              class="font-sora font-semibold text-primary text-xl lg:text-2xl max-w-[15rem] mt-5 mb-4 lg:text-center lg:max-w-md"
+            >
+              Mengapa Memilih Kami?
+            </h2>
+            <p
+              class="font-poppins font-light text-sm lg:text-base leading-relaxed tracking-normal max-w-md mb-5 lg:text-center"
+            >
+              Produk online bakery store kami dibuat dengan bahan-bahan segar
+              dan berkualitas, sehingga konsumen dapat menikmati rasa yang
+              autentik dan lezat setiap saat.
+            </p>
+          </div>
+          <div class="block items-center justify-center">
+            <h2
+              class="font-sora font-semibold text-primary text-xl lg:text-2xl max-w-[15rem] mt-5 mb-4 lg:text-center lg:max-w-md"
+            >
+              Ikuti Kami di Media Sosial
+            </h2>
+            <p
+              class="font-poppins font-light text-sm lg:text-base leading-relaxed tracking-normal max-w-md mb-7 lg:text-center"
+            >
+              Jangan lewatkan info terbaru seputar produk dan promo menarik dari
+              online bakery store kami dengan follow media sosial kami sekarang!
+            </p>
+
+            <ul class="flex list-none gap-4 lg:justify-center items-center">
+              <li>
+                <a
+                  href="#"
+                  class="w-9 h-9 border-2 border-primary p-2 rounded-full hover:bg-primary hover:text-white transition duration-200 ease-in"
+                  ><i class="fa-brands fa-instagram fa-xl"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-9 h-9 border-2 border-primary p-2 rounded-full hover:bg-primary hover:text-white transition duration-200 ease-in"
+                  ><i class="fa-brands fa-facebook fa-xl"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="w-9 h-9 border-2 border-primary p-2 rounded-full hover:bg-primary hover:text-white transition duration-200 ease-in"
+                  ><i class="fa-brands fa-whatsapp fa-xl"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about akhir -->
+
+    <!-- produk awal -->
+    <section id="produk" class="pt-36 pb-32">
+      <div class="container mx-auto px-6">
+        <h1
+          class="font-sora font-bold text-secondary text-2xl lg:text-4xl text-center mb-5 drop-shadow-sm"
+        >
+          Produk Kami
+        </h1>
+        <div class="flex flex-wrap items-center justify-center lg:gap-6">
+          <div
+            class="w-3/5 bg-white border-2 border-primary rounded-xl shadow-md mb-6 lg:w-1/4"
+          >
+            <a href="#">
+              <img class="rounded-t-xl w-auto" src="img/img_4.jpg" />
+            </a>
+
+            <div class="p-5">
+              <a href="#" class="font-sora font-medium text-base">Produk 1</a>
+              <p class="font-poppins font-light text-sm leading-relaxed mt-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                voluptate.
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-3/5 bg-white border-2 border-primary rounded-xl shadow-md mb-6 lg:w-1/4"
+          >
+            <a href="#">
+              <img class="rounded-t-xl w-auto" src="img/img_4.jpg" />
+            </a>
+
+            <div class="p-5">
+              <a href="#" class="font-sora font-medium text-base">Produk 2</a>
+              <p class="font-poppins font-light text-sm leading-relaxed mt-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                voluptate.
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-3/5 bg-white border-2 border-primary rounded-xl shadow-md mb-6 lg:w-1/4"
+          >
+            <a href="#">
+              <img class="rounded-t-xl w-auto" src="img/img_4.jpg" />
+            </a>
+
+            <div class="p-5">
+              <a href="#" class="font-sora font-medium text-base">Produk 3</a>
+              <p class="font-poppins font-light text-sm leading-relaxed mt-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                voluptate.
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-3/5 bg-white border-2 border-primary rounded-xl shadow-md mb-6 lg:w-1/4"
+          >
+            <a href="#">
+              <img class="rounded-t-xl w-auto" src="img/img_4.jpg" />
+            </a>
+
+            <div class="p-5">
+              <a href="#" class="font-sora font-medium text-base">Produk 1</a>
+              <p class="font-poppins font-light text-sm leading-relaxed mt-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                voluptate.
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-3/5 bg-white border-2 border-primary rounded-xl shadow-md mb-6 lg:w-1/4"
+          >
+            <a href="#">
+              <img class="rounded-t-xl w-auto" src="img/img_4.jpg" />
+            </a>
+
+            <div class="p-5">
+              <a href="#" class="font-sora font-medium text-base">Produk 2</a>
+              <p class="font-poppins font-light text-sm leading-relaxed mt-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                voluptate.
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-3/5 bg-white border-2 border-primary rounded-xl shadow-md mb-6 lg:w-1/4"
+          >
+            <a href="#">
+              <img class="rounded-t-xl w-auto" src="img/img_4.jpg" />
+            </a>
+
+            <div class="p-5">
+              <a href="#" class="font-sora font-medium text-base">Produk 3</a>
+              <p class="font-poppins font-light text-sm leading-relaxed mt-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                voluptate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- produk akhir -->
+
+    <!-- footer awal -->
+
+    <footer class="p-4 bg-primary rounded-t-xl shadow md:px-6 md:py-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <a href="#home" class="flex items-center mb-4 sm:mb-0">
+          <img src="img/logo.png" class="w-20 mr-2" />
+          <span
+            class="self-center font-sora text-2xl font-semibold tracking-wide whitespace-nowrap text-slate-100"
+            >Viloneen</span
+          >
+        </a>
+        <ul
+          class="flex flex-wrap items-center mb-6 font-poppins font-light text-sm text-slate-100 sm:mb-0"
+        >
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Home</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Tentang Kami</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Produk</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Hubungi Kami</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+      <span class="block font-poppins text-sm text-slate-100 sm:text-center"
+        >© 2023 <a href="#home" class="hover:underline">Viloneen</a>. All Rights
+        Reserved.
+      </span>
+    </footer>
+
+    <!-- footer akhir -->
+
+    <!-- Custom Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <!-- Custom Javascript -->
+  </body>
+</html>
