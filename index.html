@@ -125,7 +125,7 @@
 
           <div
             id="dropdown"
-            class="z-10 hidden bg-emerald-500 divide-y divide-gray-100 rounded-lg shadow w-60"
+            class="z-10 hidden bg-emerald-500 divide-y divide-gray-100 rounded-xl shadow w-60 h-screen"
           >
             <ul
               class="py-2 text-sm text-third font-poppins font-semibold"
@@ -160,6 +160,21 @@
                 >
               </li>
             </ul>
+
+            <div class="w-full">
+              <a
+                href="#home"
+                class="flex items-center justify-center mb-2 sm:mb-0"
+              >
+                <img src="img/logo.png" class="w-20 mr-2" />
+              </a>
+
+              <div class="max-w-full mb-6 text-center">
+                <p class="font-poppins font-medium text-slate-100">
+                  &copy; 2023 Viloneen. All Rights Reserved
+                </p>
+              </div>
+            </div>
           </div>
 
           <div class="flex items-center lg:hidden">
@@ -382,7 +397,7 @@
     <!-- contact awal -->
     <section id="contact" class="pt-36 pb-32 bg-gray-500">
       <div class="container mx-auto px-6">
-        <div class="block items-center justify-center text-center mb-6">
+        <div class="max-w-lg mx-auto text-center mb-6">
           <h1
             class="font-sora font-bold text-secondary text-2xl lg:text-4xl mb-3 drop-shadow-sm"
           >
@@ -394,43 +409,45 @@
           </p>
         </div>
 
-        <div class="block items-center justify-center mb-5">
-          <label
-            for="nama"
-            class="font-sora font-semibold text-base text-secondary"
-            >Nama</label
-          >
-          <input
-            type="text"
-            id="nama"
-            class="w-full rounded-xl mt-2 font-sora font-normal text-base"
-          />
-        </div>
-        <div class="block items-center justify-center mb-5">
-          <label
-            for="email"
-            class="font-sora font-semibold text-base text-secondary"
-            >Email</label
-          >
-          <input
-            type="email"
-            id="email"
-            class="w-full rounded-xl mt-2 font-sora font-normal text-base"
-          />
-        </div>
-        <div class="block items-center justify-center mb-5">
-          <label
-            for="pesan"
-            class="font-sora font-semibold text-base text-secondary"
-            >Pesan</label
-          >
-          <textarea
-            name="pesan"
-            id="pesan"
-            cols="30"
-            rows="10"
-            class="w-full rounded-xl mt-2 p-5 font-sora font-normal text-base"
-          ></textarea>
+        <div class="max-w-lg mx-auto">
+          <div class="block items-center justify-center mb-5">
+            <label
+              for="nama"
+              class="font-sora font-semibold text-base text-secondary"
+              >Nama</label
+            >
+            <input
+              type="text"
+              id="nama"
+              class="w-full rounded-xl mt-2 font-sora font-normal text-base"
+            />
+          </div>
+          <div class="block items-center justify-center mb-5">
+            <label
+              for="email"
+              class="font-sora font-semibold text-base text-secondary"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="w-full rounded-xl mt-2 font-sora font-normal text-base"
+            />
+          </div>
+          <div class="block items-center justify-center mb-5">
+            <label
+              for="pesan"
+              class="font-sora font-semibold text-base text-secondary"
+              >Pesan</label
+            >
+            <textarea
+              name="pesan"
+              id="pesan"
+              cols="30"
+              rows="10"
+              class="w-full rounded-xl mt-2 p-5 font-sora font-normal text-base"
+            ></textarea>
+          </div>
         </div>
 
         <div class="flex items-center justify-center">
